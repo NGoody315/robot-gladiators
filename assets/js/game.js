@@ -49,7 +49,7 @@ var fight = function (enemyName) {
 
     if (confirmSkip) {
     window.alert(playerName + " has decided to skip this fight. Goodbye!");
-    playerMoney = playerMoney - 10;
+    playerMoney = playerMoney - 3;
     console.log("playerMoney", playerMoney);
     break;
 } else {
@@ -126,10 +126,10 @@ var shop = function () {
         case "REFILL": //new case
         case "refill":
             if (playerMoney >= 7){
-            window.alert("Refilling player's health by 20 for 7 dollars.");
+            window.alert("Refilling player's health by 50 for 7 dollars.");
 
             //increase health and decrease money
-            playerHealth = playerHealth + 20;
+            playerHealth = playerHealth + 50;
             playerMoney = playerMoney - 7;
             }
             else {
